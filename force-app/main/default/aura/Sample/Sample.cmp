@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" > 
+
+<lightning:card>
+<lightning:recordForm
+       
+        objectApiName="Account"
+        layoutType="Compact"
+        mode="edit" />
+</lightning:card>
+</aura:component>
