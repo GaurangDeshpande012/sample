@@ -3,8 +3,14 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/navigateURL": [
+                "navigateURL/navigateURL.js"
+            ],
             "c/recordEditFrom": [
                 "recordEditFrom/recordEditFrom.js"
+            ],
+            "c/sAMPLELWC": [
+                "sAMPLELWC/sAMPLELWC.js"
             ]
         }
     },
