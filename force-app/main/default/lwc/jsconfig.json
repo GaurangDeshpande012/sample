@@ -11,6 +11,9 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
+            ],
+            "c/lWChello": [
+                "lWChello/lWChello.js"
             ]
         }
     },
