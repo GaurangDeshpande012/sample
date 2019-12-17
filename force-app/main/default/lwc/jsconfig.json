@@ -14,6 +14,9 @@
             ],
             "c/lWChello": [
                 "lWChello/lWChello.js"
+            ],
+            "c/recordEditForm": [
+                "recordEditForm/recordEditForm.js"
             ]
         }
     },
