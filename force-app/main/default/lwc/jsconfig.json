@@ -17,6 +17,9 @@
             ],
             "c/recordEditForm": [
                 "recordEditForm/recordEditForm.js"
+            ],
+            "c/nEWDEMO": [
+                "nEWDEMO/nEWDEMO.js"
             ]
         }
     },
