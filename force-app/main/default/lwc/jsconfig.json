@@ -3,8 +3,17 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/lWChello": [
+                "lWChello/lWChello.js"
+            ],
+            "c/nEWDEMO": [
+                "nEWDEMO/nEWDEMO.js"
+            ],
             "c/navigateURL": [
                 "navigateURL/navigateURL.js"
+            ],
+            "c/recordEditForm": [
+                "recordEditForm/recordEditForm.js"
             ],
             "c/recordEditFrom": [
                 "recordEditFrom/recordEditFrom.js"
@@ -12,14 +21,8 @@
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
             ],
-            "c/lWChello": [
-                "lWChello/lWChello.js"
-            ],
-            "c/recordEditForm": [
-                "recordEditForm/recordEditForm.js"
-            ],
-            "c/nEWDEMO": [
-                "nEWDEMO/nEWDEMO.js"
+            "c/gd": [
+                "gd/gd.js"
             ]
         }
     },
