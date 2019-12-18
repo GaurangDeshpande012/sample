@@ -3,6 +3,9 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/gd": [
+                "gd/gd.js"
+            ],
             "c/lWChello": [
                 "lWChello/lWChello.js"
             ],
@@ -20,9 +23,6 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
-            ],
-            "c/gd": [
-                "gd/gd.js"
             ]
         }
     },
