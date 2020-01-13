@@ -3,6 +3,9 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/gD": [
+                "gD/gD.js"
+            ],
             "c/gd": [
                 "gd/gd.js"
             ],
@@ -15,6 +18,9 @@
             "c/navigateURL": [
                 "navigateURL/navigateURL.js"
             ],
+            "c/newSample": [
+                "newSample/newSample.js"
+            ],
             "c/recordEditForm": [
                 "recordEditForm/recordEditForm.js"
             ],
@@ -23,27 +29,6 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
-            ],
-            "c/chartBar": [
-                "lwc-recipes/force-app/main/default/lwc/chartBar/chartBar.js"
-            ],
-            "c/categoryFilter": [
-                "lwc-recipes/force-app/main/default/lwc/categoryFilter/categoryFilter.js"
-            ],
-            "c/contactTile": [
-                "lwc-recipes/force-app/main/default/lwc/contactTile/contactTile.js"
-            ],
-            "c/compositionWithAppBuilder": [
-                "lwc-recipes/force-app/main/default/lwc/compositionWithAppBuilder/compositionWithAppBuilder.js"
-            ],
-            "c/compositionBasics": [
-                "lwc-recipes/force-app/main/default/lwc/compositionBasics/compositionBasics.js"
-            ],
-            "c/apiFunction": [
-                "lwc-recipes/force-app/main/default/lwc/apiFunction/apiFunction.js"
-            ],
-            "c/apexStaticSchema": [
-                "lwc-recipes/force-app/main/default/lwc/apexStaticSchema/apexStaticSchema.js"
             ]
         }
     },
