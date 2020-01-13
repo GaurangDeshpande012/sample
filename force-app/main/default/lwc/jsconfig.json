@@ -29,6 +29,15 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
+            ],
+            "c/paginatorBottom": [
+                "paginatorBottom/paginatorBottom.js"
+            ],
+            "c/recordList": [
+                "recordList/recordList.js"
+            ],
+            "c/paginationParent": [
+                "paginationParent/paginationParent.js"
             ]
         }
     },
