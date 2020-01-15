@@ -6,19 +6,19 @@ import {ShowToastEvent} from 'lightning/platformShowToastEvent';
 
 
 // datatable columns
-//const cols = [
-  //  {label: 'Name',fieldName: 'Name'}, 
-   // {label: 'Industry',fieldName: 'Industry'},
-   // {label: 'Type',fieldName: 'Type'}, 
-   // {label: 'Phone',fieldName: 'Phone',type: 'phone'}, 
-  //  {label: 'Rating',fieldName: 'Rating'}, 
-  //  {label: 'Account Number',fieldName: 'AccountNumber'}, 
-//];
+const cols = [
+   {label: 'Name',fieldName: 'Name'}, 
+    {label: 'Industry',fieldName: 'Industry'},
+    {label: 'Type',fieldName: 'Type'}, 
+    {label: 'Phone',fieldName: 'Phone',type: 'phone'}, 
+    {label: 'Rating',fieldName: 'Rating'}, 
+   {label: 'Account Number',fieldName: 'AccountNumber'}, 
+];
 
 export default class ExportDataToCSVInLWC extends LightningElement {
     @track error;
     @track data;
-   // @track columns = cols;
+    @track columns = cols;
 
     // this constructor invoke when component is created.
     // once component is created it will fetch the accounts
