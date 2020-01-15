@@ -21,23 +21,26 @@
             "c/newSample": [
                 "newSample/newSample.js"
             ],
+            "c/paginationParent": [
+                "paginationParent/paginationParent.js"
+            ],
+            "c/paginatorBottom": [
+                "paginatorBottom/paginatorBottom.js"
+            ],
             "c/recordEditForm": [
                 "recordEditForm/recordEditForm.js"
             ],
             "c/recordEditFrom": [
                 "recordEditFrom/recordEditFrom.js"
             ],
-            "c/sAMPLELWC": [
-                "sAMPLELWC/sAMPLELWC.js"
-            ],
-            "c/paginatorBottom": [
-                "paginatorBottom/paginatorBottom.js"
-            ],
             "c/recordList": [
                 "recordList/recordList.js"
             ],
-            "c/paginationParent": [
-                "paginationParent/paginationParent.js"
+            "c/sAMPLELWC": [
+                "sAMPLELWC/sAMPLELWC.js"
+            ],
+            "c/exportDataToCSVInLWC": [
+                "exportDataToCSVInLWC/exportDataToCSVInLWC.js"
             ]
         }
     },
