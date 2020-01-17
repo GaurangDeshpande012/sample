@@ -3,6 +3,9 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/exportDataToCSVInLWC": [
+                "exportDataToCSVInLWC/exportDataToCSVInLWC.js"
+            ],
             "c/gD": [
                 "gD/gD.js"
             ],
@@ -38,9 +41,6 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
-            ],
-            "c/exportDataToCSVInLWC": [
-                "exportDataToCSVInLWC/exportDataToCSVInLWC.js"
             ]
         }
     },
