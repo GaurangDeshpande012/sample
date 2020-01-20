@@ -41,6 +41,9 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
+            ],
+            "c/enabledObject": [
+                "enabledObject/enabledObject.js"
             ]
         }
     },
