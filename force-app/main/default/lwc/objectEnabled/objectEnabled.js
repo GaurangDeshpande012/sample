@@ -149,6 +149,11 @@ let objStr;
        const evtCustomEvent = new CustomEvent('reset');
        this.dispatchEvent(evtCustomEvent);
    }
+
+   connectedCallback(){
+
+   }
+
 }
       
 
