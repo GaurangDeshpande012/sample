@@ -29,7 +29,8 @@ export default class EnabledObject extends LightningElement {
                 this.error = error;
             }
         } 
-        
+                // this handlechange for selecting object
+
         handleObjectChange(event)
         {   
             const selectedOption = event.detail.value;  
@@ -51,7 +52,9 @@ export default class EnabledObject extends LightningElement {
                 this.error = error;
             });
     
+
         }
+        // this handlechange for selecting feild
         handleFieldChange(){
     
         }

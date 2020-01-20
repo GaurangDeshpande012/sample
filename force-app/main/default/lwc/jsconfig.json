@@ -44,6 +44,12 @@
             ],
             "c/enabledObject": [
                 "enabledObject/enabledObject.js"
+            ],
+            "c/objectEnabled": [
+                "objectEnabled/objectEnabled.js"
+            ],
+            "c/retrieveRecord": [
+                "retrieveRecord/retrieveRecord.js"
             ]
         }
     },
