@@ -3,6 +3,7 @@ import { LightningElement, track, wire } from 'lwc';
 import retreieveObjects from '@salesforce/apex/DescribeObjectHelper.retreieveObjects';
 import getListOfFields from '@salesforce/apex/DescribeObjectHelper.getListOfFields';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+//import jszip from '@salesforce/resourceUrl/jszip'
 
 /** The delay used when debouncing event handlers before invoking Apex. */
 const DELAY = 300;
