@@ -3,6 +3,9 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/enabledObject": [
+                "enabledObject/enabledObject.js"
+            ],
             "c/exportDataToCSVInLWC": [
                 "exportDataToCSVInLWC/exportDataToCSVInLWC.js"
             ],
@@ -11,6 +14,9 @@
             ],
             "c/gd": [
                 "gd/gd.js"
+            ],
+            "c/jSONLWC": [
+                "jSONLWC/jSONLWC.js"
             ],
             "c/lWChello": [
                 "lWChello/lWChello.js"
@@ -23,6 +29,9 @@
             ],
             "c/newSample": [
                 "newSample/newSample.js"
+            ],
+            "c/objectEnabled": [
+                "objectEnabled/objectEnabled.js"
             ],
             "c/paginationParent": [
                 "paginationParent/paginationParent.js"
@@ -39,17 +48,11 @@
             "c/recordList": [
                 "recordList/recordList.js"
             ],
-            "c/sAMPLELWC": [
-                "sAMPLELWC/sAMPLELWC.js"
-            ],
-            "c/enabledObject": [
-                "enabledObject/enabledObject.js"
-            ],
-            "c/objectEnabled": [
-                "objectEnabled/objectEnabled.js"
-            ],
             "c/retrieveRecord": [
                 "retrieveRecord/retrieveRecord.js"
+            ],
+            "c/sAMPLELWC": [
+                "sAMPLELWC/sAMPLELWC.js"
             ]
         }
     },

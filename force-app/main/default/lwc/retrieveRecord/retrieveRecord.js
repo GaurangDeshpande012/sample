@@ -1,13 +1,13 @@
 /* eslint-disable no-console */
 
-import { LightningElement, wire, api, track } from 'lwc';
+import { LightningElement,api, track } from 'lwc';
 
-import retreieveRecords from '@salesforce/apex/DescribeObjectHelper.retreieveRecords';
+//import retreieveRecords from '@salesforce/apex/DescribeObjectHelper.retreieveRecords';
 
-let i=0;
-let args=[]; //holding arguments that is passed through event
-let columnFields;
-let itemValue; //holds each item with first letter in upper case
+////let i=0;
+//let args=[]; //holding arguments that is passed through event
+//let columnFields;
+//let itemValue; //holds each item with first letter in upper case
 
 export default class RetrieveRecord extends LightningElement {
 
@@ -20,7 +20,7 @@ export default class RetrieveRecord extends LightningElement {
     @track isRecordsVisible; //decision to make if this dynamic table to be shown.
 
     //retrieve data from databased
-    @wire(retreieveRecords,{objectName:'$objectName'
+    /*@wire(retreieveRecords,{objectName:'$objectName'
                             ,fieldAPINames:'$fieldAPINames'})
     wiredObjects({ error, data }) {
         if (data) {
@@ -31,10 +31,10 @@ export default class RetrieveRecord extends LightningElement {
             this.error = error;
             this.data = undefined;
         }
-    }
+    }*/
 
     //due to event propagation this method is called
-    retriveRecordHandler(event){
+   /* retriveRecordHandler(event){
         console.log('retriveRecordHandler is fired');
         
         args = JSON.parse(JSON.stringify(event.detail));
@@ -62,7 +62,7 @@ export default class RetrieveRecord extends LightningElement {
         } 
         this.columns = this.items;
         this.isRecordsVisible = true;
-    }
+    }*/
 
     //due to event propagation this method is called for reseting datatable
     // eslint-disable-next-line no-unused-vars
