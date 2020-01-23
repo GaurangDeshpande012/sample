@@ -155,25 +155,25 @@ let objStr;
    } */
    
 
-  handleClick()
- {
-alert('Onclick of Enable button');
+ // handleClick()
+ //{
+//alert('Onclick of Enable button');
 //this.isLoaded = !this.isLoaded;
-   }
+   //}
 
 
 
    //this method is fired when reset button is clicked.
    // eslint-disable-next-line no-unused-vars
-   handleResetClick(event){
-       this.value = '';
-       this.tableData = [];
-       const evtCustomEvent = new CustomEvent('reset');
-       this.dispatchEvent(evtCustomEvent);
+   //handleResetClick(event){
+   ///    this.value = '';
+   //    this.tableData = [];
+   //    const evtCustomEvent = new CustomEvent('reset');
+     //  this.dispatchEvent(evtCustomEvent);
        //connectedCallback();
       // alert('connectedCallback');
 
-   }
+   //}
 
    renderedCallback() {
 alert('renderedCallback');
@@ -273,7 +273,7 @@ connectedCallback()
               // console.log('jsjszipinflatezip');
             })
             .catch(error => {
-                //alert(error.body.message);
+                alert(error.body.message);
                 
                     this.error = error;
             });
