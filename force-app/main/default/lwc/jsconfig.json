@@ -53,6 +53,9 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
+            ],
+            "c/customDatatableInLWC": [
+                "customDatatableInLWC/customDatatableInLWC.js"
             ]
         }
     },

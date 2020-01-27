@@ -155,28 +155,32 @@ let objStr;
    } */
    
 
- // handleClick()
- //{
-//alert('Onclick of Enable button');
+ handleClick(evevt)
+{alert('Onclick of Enable button');
+renderedCallback();
 //this.isLoaded = !this.isLoaded;
-   //}
+   }
 
 
 
    //this method is fired when reset button is clicked.
    // eslint-disable-next-line no-unused-vars
-   //handleResetClick(event){
-   ///    this.value = '';
-   //    this.tableData = [];
-   //    const evtCustomEvent = new CustomEvent('reset');
-     //  this.dispatchEvent(evtCustomEvent);
+   handleResetClick(event){
+     this.value = '';
+      this.tableData = [];
+     const evtCustomEvent = new CustomEvent('reset');
+      this.dispatchEvent(evtCustomEvent);
        //connectedCallback();
       // alert('connectedCallback');
 
-   //}
+   }
 
    renderedCallback() {
+
 alert('renderedCallback');
+//alert( 'jszip');
+// eslint-disable-next-line no-console
+console.log(this+'jszip')
 
 if (this.jszipjsInitialized) {
     return;
@@ -202,8 +206,6 @@ if (this.jsziploadflateInitialized
 this.jsziploadflateInitialized= true;
 
 
-
-
     Promise.all([
         loadScript(this, jszip ),
         loadScript(this, jszipinflate), 
@@ -211,8 +213,9 @@ this.jsziploadflateInitialized= true;
         loadScript(this, jszipload ),
         //loadStyle(this, customSR + '/customCss.css'),
        
-
     ])
+
+    
     //console.log(  this+ 'jszip')
         .then(() => {
             alert('Files loaded.');
@@ -225,7 +228,7 @@ this.jsziploadflateInitialized= true;
                 this.error = error;
         });
 }
-connectedCallback()
+/*connectedCallback()
 
 {
 
@@ -277,11 +280,12 @@ connectedCallback()
                 
                     this.error = error;
             });
-    }
+    }*/
 
 
 }
-
+   
+   
 
 
 
