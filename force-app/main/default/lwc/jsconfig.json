@@ -3,6 +3,9 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
+            "c/customDatatableInLWC": [
+                "customDatatableInLWC/customDatatableInLWC.js"
+            ],
             "c/enabledObject": [
                 "enabledObject/enabledObject.js"
             ],
@@ -20,6 +23,9 @@
             ],
             "c/lWChello": [
                 "lWChello/lWChello.js"
+            ],
+            "c/lwcDataTable": [
+                "lwcDataTable/lwcDataTable.js"
             ],
             "c/nEWDEMO": [
                 "nEWDEMO/nEWDEMO.js"
@@ -53,9 +59,6 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
-            ],
-            "c/customDatatableInLWC": [
-                "customDatatableInLWC/customDatatableInLWC.js"
             ]
         }
     },
