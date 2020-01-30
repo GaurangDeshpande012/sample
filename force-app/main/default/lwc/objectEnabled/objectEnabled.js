@@ -155,10 +155,18 @@ let objStr;
    } */
    
 
- handleClick(evevt)
-{alert('Onclick of Enable button');
-renderedCallback();
-//this.isLoaded = !this.isLoaded;
+ handleClick(event)
+{
+    alert('Onclick of Enable button');
+    console.log('jszip');
+    alert('jszip');
+
+//renderedCallback();
+this.event=target.value;
+
+
+
+
    }
 
 
@@ -177,12 +185,11 @@ renderedCallback();
 
    renderedCallback() {
 
-alert('renderedCallback');
+//alert('renderedCallback');
 //alert( 'jszip');
 // eslint-disable-next-line no-console
-console.log(this+'jszip')
 
-if (this.jszipjsInitialized) {
+/*if (this.jszipjsInitialized) {
     return;
 }
 this.jszipInitialized = true;
@@ -206,29 +213,31 @@ if (this.jsziploadflateInitialized
 this.jsziploadflateInitialized= true;
 
 
-    Promise.all([
-        loadScript(this, jszip ),
-        loadScript(this, jszipinflate), 
-       loadScript(this, jszipdeflate),
-        loadScript(this, jszipload ),
+    Promise([
+        loadScript(this. jszipInitialized  +'/jszip.js'),
+        loadScript(this.jszipinflateInitialized  ), 
+      loadScript( this.jszipdeflateInitialized ),
+        loadScript(this.jsziploadflateInitialized ),
         //loadStyle(this, customSR + '/customCss.css'),
-       
+        ///this.isLoaded = !this.isLoaded
     ])
 
     
-    //console.log(  this+ 'jszip')
+
         .then(() => {
             alert('Files loaded.');
            // alert('jszipinflate');
           // console.log('jsjszipinflatezip');
         })
         .catch(error => {
-            //alert(error.body.message);
+            alert(error.body.message);
             
                 this.error = error;
         });
 }
-/*connectedCallback()
+*/
+
+connectedCallback()
 
 {
 
@@ -280,11 +289,11 @@ this.jsziploadflateInitialized= true;
                 
                     this.error = error;
             });
-    }*/
+    }
 
 
 }
-   
+}
    
 
 
