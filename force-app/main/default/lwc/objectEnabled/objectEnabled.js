@@ -1,7 +1,6 @@
 /* eslint-disable no-alert */
 /* eslint-disable no-undef */
 import { LightningElement, track, wire } from 'lwc';
-
 import retreieveObjects from '@salesforce/apex/DescribeObjectHelper.retreieveObjects';
 import getListOfFields from '@salesforce/apex/DescribeObjectHelper.getListOfFields';
 //import { ShowToastEvent } from 'lightning/platformShowToastEvent';
@@ -160,10 +159,8 @@ let objStr;
     alert('Onclick of Enable button');
     console.log('jszip');
     alert('jszip');
-
-//renderedCallback();
-this.event=target.value;
-
+    
+    connectedCallback();
 
 
 
@@ -189,7 +186,7 @@ this.event=target.value;
 //alert( 'jszip');
 // eslint-disable-next-line no-console
 
-/*if (this.jszipjsInitialized) {
+if (this.jszipjsInitialized) {
     return;
 }
 this.jszipInitialized = true;
@@ -235,7 +232,7 @@ this.jsziploadflateInitialized= true;
                 this.error = error;
         });
 }
-*/
+
 
 connectedCallback()
 
@@ -281,8 +278,8 @@ connectedCallback()
         //console.log(  this+ 'jszip')
             .then(() => {
                 alert('Files loaded.');
-               // alert('jszipinflate');
-              // console.log('jsjszipinflatezip');
+                alert('jszipinflate');
+               console.log('jsjszipinflatezip');
             })
             .catch(error => {
                 alert(error.body.message);
@@ -293,7 +290,7 @@ connectedCallback()
 
 
 }
-}
+
    
 
 

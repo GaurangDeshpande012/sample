@@ -59,6 +59,9 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
+            ],
+            "c/dataTableRowAction": [
+                "dataTableRowAction/dataTableRowAction.js"
             ]
         }
     },
