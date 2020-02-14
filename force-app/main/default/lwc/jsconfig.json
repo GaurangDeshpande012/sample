@@ -6,6 +6,9 @@
             "c/customDatatableInLWC": [
                 "customDatatableInLWC/customDatatableInLWC.js"
             ],
+            "c/dataTableRowAction": [
+                "dataTableRowAction/dataTableRowAction.js"
+            ],
             "c/enabledObject": [
                 "enabledObject/enabledObject.js"
             ],
@@ -21,8 +24,14 @@
             "c/jSONLWC": [
                 "jSONLWC/jSONLWC.js"
             ],
+            "c/lWCDROWACTION": [
+                "lWCDROWACTION/lWCDROWACTION.js"
+            ],
             "c/lWChello": [
                 "lWChello/lWChello.js"
+            ],
+            "c/lazyLoadingDataTable": [
+                "lazyLoadingDataTable/lazyLoadingDataTable.js"
             ],
             "c/lwcDataTable": [
                 "lwcDataTable/lwcDataTable.js"
@@ -59,12 +68,6 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
-            ],
-            "c/dataTableRowAction": [
-                "dataTableRowAction/dataTableRowAction.js"
-            ],
-            "c/lazyLoadingDataTable": [
-                "lazyLoadingDataTable/lazyLoadingDataTable.js"
             ]
         }
     },

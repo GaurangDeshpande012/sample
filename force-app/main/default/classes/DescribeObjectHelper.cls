@@ -37,4 +37,31 @@ public with sharing class DescribeObjectHelper {
                         + ' LIMIT 20';
         return database.query(strQuery);
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<aura:component controller='SelectedSObjectFieldsController' implements="flexipage:availableForAllPageTypes" access="global" >
+ 	<aura:handler name='init' value='{!this}' action='{!c.doInit}' />
+    <aura:attribute name='objectList' type='List' />
+    <aura:attribute name="selectedObject" type="String"/>
+	<aura:attribute name="options" type="List" />
+    <aura:attribute name="selectedArray" type="List" default="[]"/>
+    <aura:attribute name="PageHeading" type="String" default="Enable Objects"/>
+    
+    <aura:attribute name="packageXML" type="String"/>
+    <aura:attribute name="metadataXML" type="String"/>
+    <aura:attribute name="triggerBody" type="String"/>
+    
+     
+       
+                  
+    <ltng:require scripts="{!$Resource.jjszip}"/>
+    <ltng:require scripts="{!$Resource.jszipdeflate}"/>
+    <ltng:require scripts="{!$Resource.jszipinflate}"/>
+    <ltng:require scripts="{!$Resource.jszipload}"/>
+ 
+    
+    <div class="slds-m-around_small">
+        <div class="slds-page-header">
+
+        </div><br/>
+         <div class="slds-m-top--xx-large">
+        <div class="slds-page-header">
+            <div class="slds-align--absolute-center">
+                <div class="slds-text-heading--large">       
+                    {!v.PageHeading}
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/> <br/>
+
+        
+         <div class = "slds-size--3-of-8">
+        <lightning:select aura:id="selectid" label="Select Object" name="obj" value="{!v.selectedObject}" >
+            <option value="" text="- None -" />
+            <aura:iteration items="{!v.objectList}" var="obj">
+                <option value="{!obj.key}" text="{!obj.value}" />
+            </aura:iteration>
+        </lightning:select>
+        <br/>
+        <lightning:button label="Search" onclick="{!c.fieldsName}"/>
+    </div>
+    <br/>
+        
+        
+    <lightning:dualListbox name="fields"  
+                       label= "Fields" 
+                       sourceLabel="Available" 
+                       selectedLabel="Selected" 
+                       fieldLevelHelp="This is a dual listbox" 
+                       options="{!v.options}" 
+                        onchange="{! c.handleChange }"   
+                      />
+     Selected Values : 
+
+    <aura:iteration items="{!v.selectedArray}" var="val" indexVar="indvar">
+        <li>
+            {!val}
+        </li>
+
+    </aura:iteration>
+                
+          </div> <br/>
+        <div>
+        <lightning:button variant="brand" label="Save" onclick="{! c.handleSavePopupClick}" />
+</div>
+ 
+         <ui:scrollerWrapper class="scrollerSize">
+                <div class="slds-size_2-of-2">
+                    <div id='sfdctable' aura:id='sfdcDiv'>
+                        <!-- devision that will show the dynamic content -->
+
+                    </div>
+                </div>
+            </ui:scrollerWrapper>
+</aura:component>
