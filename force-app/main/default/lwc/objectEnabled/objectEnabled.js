@@ -5,11 +5,13 @@ import retreieveObjects from '@salesforce/apex/DescribeObjectHelper.retreieveObj
 import getListOfFields from '@salesforce/apex/DescribeObjectHelper.getListOfFields';
 //import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 //import jszip from '@salesforce/resourceUrl/jszip'
-import { loadScript } from 'lightning/platformResourceLoader';
-import jszip from '@salesforce/resourceUrl/jszip';
-import jszipinflate from '@salesforce/resourceUrl/jszipinflate'; 
-import jszipdeflate from '@salesforce/resourceUrl/jszipdeflate'; 
-import jszipload from '@salesforce/resourceUrl/jszipload'; 
+// eslint-disable-next-line no-unused-vars
+import { loadScript ,loadStyle} from 'lightning/platformResourceLoader';
+// eslint-disable-next-line no-unused-vars
+import JSZIP1 from '@salesforce/resourceUrl/JSZIP1';
+//import jszipinflate from '@salesforce/resourceUrl/jszipinflate'; 
+//import jszipdeflate from '@salesforce/resourceUrl/jszipdeflate'; 
+//import jszipload from '@salesforce/resourceUrl/jszipload'; 
 
 
 /** The delay used when debouncing event handlers before invoking Apex. */
@@ -42,10 +44,10 @@ let objStr;
    @track columns = columns;   //columns for List of fields datatable
    @track selectedFieldsValue=''; //fields selected in datatable
    @track tableData;   //data for list of fields datatable
-   jszipInitialized = false;
+   JSZIP1 = false;
    jszipinflateInitialized =false;
-   jszipdeflateInitialized=false;
-   jsziploadflateInitialized=false;
+   ///jszipdeflateInitialized=false;
+  /// jsziploadflateInitialized=false;
 
    //retrieve object information to be displayed in combo box and prepare an array
  @wire(retreieveObjects)
@@ -186,12 +188,12 @@ let objStr;
 //alert( 'jszip');
 // eslint-disable-next-line no-console
 
-if (this.jszipjsInitialized) {
+if (this.JSZIP1) {
     return;
 }
-this.jszipInitialized = true;
+this.JSZIP1 = true;
 
-
+/*
 if (this.jszipinflateInitialized) {
     return;
 }
@@ -203,20 +205,20 @@ if (this.jszipdeflateInitialized
 }
 this.jszipdeflateInitialized= true;
 
-if (this.jsziploadflateInitialized
-    ) {
-    return;
-}
-this.jsziploadflateInitialized= true;
+//if (this.jsziploadflateInitialized
+//    ) {
+//    return;
+//}
+//this.jsziploadflateInitialized= true;*/
 
 
     Promise([
-        loadScript(this. jszipInitialized  +'/jszip.js'),
-        loadScript(this.jszipinflateInitialized  ), 
-      loadScript( this.jszipdeflateInitialized ),
-        loadScript(this.jsziploadflateInitialized ),
+        loadScript(this. JSZIP1  +'/JSZIP1.js'),
+        //loadScript(this.jszipinflateInitialized  ), 
+      //loadScript( this.jszipdeflateInitialized ),
+      //  loadScript(this.jsziploadflateInitialized ),
         //loadStyle(this, customSR + '/customCss.css'),
-        ///this.isLoaded = !this.isLoaded
+        this.isLoaded = !this.isLoaded
     ])
 
     
@@ -234,7 +236,7 @@ this.jsziploadflateInitialized= true;
 }
 
 
-connectedCallback()
+/*connectedCallback()
 
 {
 
@@ -287,7 +289,7 @@ connectedCallback()
                     this.error = error;
             });
     }
-
+*/
 
 }
 
