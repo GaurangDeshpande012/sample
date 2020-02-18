@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Current User Information" icon-name="custom:custom15">
+        <template if:true={user.data}>
+            <div class="slds-m-around_medium">
+                <p>Id: {userId}</p>
+                <p>Name: {name}</p>
+                <p>	Active: {active}</p>
+                <p>
+                    <lightning-formatted-email
+                        value={email}
+                    ></lightning-formatted-email>
+                </p>
+            </div>
+        </template>
+        <template if:true={user.error}>
+            <c-error-panel errors={user.error}></c-error-panel>
+        </template>
+     
+    </lightning-card>
+</template>

@@ -2,7 +2,7 @@ public with sharing class ManageRecordsController {
    @AuraEnabled(cacheable = true)  
    public static List<Account> getAccountsList(Integer pagenumber, Integer numberOfRecords, Integer pageSize, String searchString) {  
      String searchKey = '%' + searchString + '%';  
-     String query = 'select id, Name from Account ';  
+     String query = 'select id, Name,AccountNumber from Account ';  
      if (searchString != null && searchString != '') {  
        query += ' where name like \'%' + searchString + '%\' ';  
      }  

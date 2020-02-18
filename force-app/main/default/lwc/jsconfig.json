@@ -68,6 +68,9 @@
             ],
             "c/sAMPLELWC": [
                 "sAMPLELWC/sAMPLELWC.js"
+            ],
+            "c/currentUser": [
+                "currentUser/currentUser.js"
             ]
         }
     },

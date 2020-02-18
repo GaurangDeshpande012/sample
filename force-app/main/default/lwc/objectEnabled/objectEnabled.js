@@ -45,7 +45,7 @@ let objStr;
    @track selectedFieldsValue=''; //fields selected in datatable
    @track tableData;   //data for list of fields datatable
    JSZIP1 = false;
-   jszipinflateInitialized =false;
+   //jszipinflateInitialized =false;
    ///jszipdeflateInitialized=false;
   /// jsziploadflateInitialized=false;
 
@@ -214,19 +214,20 @@ this.jszipdeflateInitialized= true;
 
     Promise([
         loadScript(this. JSZIP1  +'/JSZIP1.js'),
-        //loadScript(this.jszipinflateInitialized  ), 
-      //loadScript( this.jszipdeflateInitialized ),
-      //  loadScript(this.jsziploadflateInitialized ),
+       
         //loadStyle(this, customSR + '/customCss.css'),
         this.isLoaded = !this.isLoaded
+        
     ])
 
     
 
         .then(() => {
+            this.showSuccessMessage();
             alert('Files loaded.');
-           // alert('jszipinflate');
-          // console.log('jsjszipinflatezip');
+            
+           // alert('JSZIP1');
+         // console.log('JSZIP1');
         })
         .catch(error => {
             alert(error.body.message);
